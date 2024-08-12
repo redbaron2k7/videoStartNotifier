@@ -1,7 +1,7 @@
 import definePlugin from "@utils/types";
 
-const startSound = require("./start.mp3");
-const stopSound = require("./stop.mp3");
+const startSound = "https://github.com/redbaron2k7/videoStartNotifier/raw/main/start.mp3";
+const stopSound = "https://github.com/redbaron2k7/videoStartNotifier/raw/main/stop.mp3";
 
 export default definePlugin({
     name: "videoStartNotifier",
