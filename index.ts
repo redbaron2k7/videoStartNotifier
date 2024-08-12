@@ -4,8 +4,8 @@ const startSound = "https://github.com/redbaron2k7/videoStartNotifier/raw/main/s
 const stopSound = "https://github.com/redbaron2k7/videoStartNotifier/raw/main/stop.mp3";
 
 export default definePlugin({
-    name: "videoStartNotifier",
-    description: "Plays a sound when a user starts or stops their video in a voice channel",
+    name: "webcamStartNotifier",
+    description: "Plays a sound when someone starts/stops their webcam in a voice channel",
     authors: [{ name: "redbaron2k7", id: 1142923640778797157n }],
     patches: [
         {
