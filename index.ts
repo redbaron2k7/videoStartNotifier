@@ -1,8 +1,8 @@
 import definePlugin from "@utils/types";
-import { SelectedChannelStore, UserStore } from "@webpack/common";
+import { SelectedChannelStore } from "@webpack/common";
 
-const startSound = "https://github.com/redbaron2k7/videoStartNotifier/raw/main/start.mp3";
-const stopSound = "https://github.com/redbaron2k7/videoStartNotifier/raw/main/stop.mp3";
+const startSound = "https://raw.githubusercontent.com/redbaron2k7/videoStartNotifier//main/start.mp3";
+const stopSound = "https://raw.githubusercontent.com/redbaron2k7/videoStartNotifier/main/stop.mp3";
 
 function playNotification(isVideoOn: boolean) {
     new Audio(isVideoOn ? startSound : stopSound).play();
@@ -26,7 +26,6 @@ export default definePlugin({
 
                     const prevVideoState = videoStates.get(state.userId);
                     if (state.selfVideo !== undefined && prevVideoState !== undefined && prevVideoState !== state.selfVideo) {
-                        const user = UserStore.getUser(state.userId);
                         playNotification(state.selfVideo);
                     }
                     videoStates.set(state.userId, state.selfVideo ?? false);
