@@ -9,7 +9,7 @@ function playNotification(isVideoOn: boolean) {
 }
 
 export default definePlugin({
-    name: "webcamStartNotifier",
+    name: "WebcamStartNotifier",
     description: "Plays a sound when someone starts/stops their webcam in a voice channel",
     authors: [{ name: "redbaron2k7", id: 1142923640778797157n }],
 
